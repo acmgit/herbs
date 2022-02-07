@@ -10,3 +10,20 @@ if(minetest.get_modpath("hunger_ng")) then
     end -- for key
 
 end -- if(minetest.get_modname("hunger_ng
+
+if(minetest.get_modpath("techage")) then
+    local reg = techage.register_plant
+
+    for key, value in pairs(mf.mushroomdatas) do
+        reg(modname .. ":" .. value[1])
+
+    end
+
+    for key, value in pairs(mf.flowerdatas) do
+        reg(modname .. ":" .. value[1])
+
+    end
+
+end
+
+
