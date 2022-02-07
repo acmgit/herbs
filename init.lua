@@ -1,7 +1,7 @@
 moreflowers = {}
 local mf = moreflowers
 
-mf.modname = "moreflowers"
+mf.modname = minetest.get_modname()
 mf.version = 1
 mf.revision = 0
 
