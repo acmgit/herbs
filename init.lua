@@ -1,10 +1,11 @@
 moreflowers = {}
+local mf = moreflowers
 
-moreflowers.modname = "moreflowers"
-moreflowers.version = 1
-moreflowers.revision = 0
+mf.modname = "moreflowers"
+mf.version = 1
+mf.revision = 0
 
-local modname = moreflowers.modname
+local modname = mf.modname
 
 -- Load support for MT game translation.
 local S = minetest.get_translator(modname)
@@ -19,7 +20,7 @@ local function S(text)
 dofile(minetest.get_modpath(modname) .. "/mapgen.lua")
 
 -- Flower registration
-function moreflowers.add_simple_flower(name, desc, box, f_groups)
+function mf.add_simple_flower(name, desc, box, f_groups)
 	-- Common flowers' groups
 	f_groups.snappy = 3
 	f_groups.flower = 1
@@ -46,10 +47,10 @@ function moreflowers.add_simple_flower(name, desc, box, f_groups)
 	})
 end
 
-function moreflowers.register_mushroom(name, descript, tile, heal)
+function mf.register_mushroom(name, descript, tile, heal)
 
     minetest.register_node(modname .. ":" .. name, {
-        description = S(descript),
+        description = descript,
         tiles = {modname .. "_" .. tile},
         inventory_image = modname .. "_" .. tile,
         wield_image = modname .. "_" .. tile,
@@ -68,7 +69,7 @@ function moreflowers.register_mushroom(name, descript, tile, heal)
     })
 end
 
-moreflowers.flowerdatas = {
+mf.flowerdatas = {
 	{
 		"campanula_blue",
 		S("Blue Campanula"),
@@ -160,52 +161,63 @@ moreflowers.flowerdatas = {
 	}
 }
 
-moreflowers.mushroomdatas = {
+mf.mushroomdatas = {
                         {   "mushroom_bulbous_green",
                             S("Green Bulbous"),
                             "mushroom_bulbous_green.png",
+                            1,
                             -10
                         },
                         {
                             "mushroom_chanterelle",
                             S("Chanterelle"),
                             "mushroom_chanterelle.png",
-                            3
+                            3,
+                            0
                         },
                         {
                             "mushroom_lorikeet",
                             S("Lorikeet"),
                             "mushroom_lorikeet.png",
+                            1,
                             -5
                         },
                         {
                             "mushroom_parasol",
                             S("Parasol"),
                             "mushroom_parasol.png",
-                            5
+                            5,
+                            0
                         },
                         {
                             "mushroom_poisonous_sublime",
                             S("Poisonous Sublime"),
                             "mushroom_poisonous_sublime.png",
+                            1,
                             -3
                         },
                         {
                             "mushroom_stone",
                             S("Stone Mushroom"),
                             "mushroom_stone.png",
-                            4
+                            4,
+                            0
                         }
                     }
 
-for _, mushroom in pairs(moreflowers.mushroomdatas) do
-    moreflowers.register_mushroom(mushroom[1],
+for _, mushroom in pairs(mf.mushroomdatas) do
+    mf.register_mushroom(mushroom[1],
                             mushroom[2],
                             mushroom[3],
                             mushroom[4]
                             )
 end
 
-for _,item in pairs(moreflowers.flowerdatas) do
-	moreflowers.add_simple_flower(unpack(item))
+for _,item in pairs(mf.flowerdatas) do
+	mf.add_simple_flower(unpack(item))
 end
+
+dofile(minetest.get_modpath(modname) .. "/register_mods.lua")
+
+minetest.log("action","[Mod] " .. mf.modname .. " V " .. mf.version .. "." .. mf.revision .. " loaded.")
+print("[Mod] " .. mf.modname .. " V " .. mf.version .. "." .. mf.revision .. " loaded.")
