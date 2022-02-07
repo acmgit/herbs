@@ -1,0 +1,26 @@
+# textdomain: moreflowers
+
+
+### init.lua ###
+
+Blue Campanula=
+Blue Thimble=
+Chanterelle=
+Cornflower=
+Green Bulbous=
+Iris=
+Lorikeet=
+Margerit=
+Noble White=
+Parasol=
+Poisonous Sublime=
+Red Clover=
+Red Poppy=
+Ribwort=
+Round Sundew=
+Snapdragon=
+Stone Mushroom=
+White Clover=
+White Yarrow=
+Yellow Houndstooth=
+Yellow Thimble=
