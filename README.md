@@ -5,8 +5,8 @@ This small mod adds 15 new flowers and 6 new mushrooms to minetest.
 
 All the flowers and mushrooms are flowers and also behave like this.
 
-![Screenshot](https://github.com/acmgit/screenshot.jpg)
-![Screenshot](https://github.com/acmgit/screenshot_1.jpg)
+![Screenshot](https://github.com/acmgit/blob/master/screenshot.jpg)
+![Screenshot](https://github.com/acmgit/blob/master/screenshot_1.jpg)
 
 ## Depends
 default, flower
