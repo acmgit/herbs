@@ -1,4 +1,4 @@
-# moreflowers
+# herbs
 
 A mod for minetest to add additional Flowers and Herbs.
 This small mod adds 15 new flowers and 6 new mushrooms to minetest.
