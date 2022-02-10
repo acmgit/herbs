@@ -1,11 +1,11 @@
-moreflowers = {}
-local mf = moreflowers
+herbs = {}
+local hb = herbs
 
-mf.modname = minetest.get_current_modname()
-mf.version = 1
-mf.revision = 0
+hb.modname = minetest.get_current_modname()
+hb.version = 1
+hb.revision = 0
 
-local modname = mf.modname
+local modname = hb.modname
 
 -- Load support for MT game translation.
 local S = minetest.get_translator(modname)
@@ -20,7 +20,7 @@ local function S(text)
 dofile(minetest.get_modpath(modname) .. "/mapgen.lua")
 
 -- Flower registration
-function mf.add_simple_flower(name, desc, box, f_groups)
+function hb.add_simple_flower(name, desc, box, f_groups)
 	-- Common flowers' groups
 	f_groups.snappy = 3
 	f_groups.flower = 1
@@ -47,7 +47,7 @@ function mf.add_simple_flower(name, desc, box, f_groups)
 	})
 end
 
-function mf.register_mushroom(name, descript, tile, heal)
+function hb.register_mushroom(name, descript, tile, heal)
 
     minetest.register_node(modname .. ":" .. name, {
         description = descript,
@@ -69,7 +69,7 @@ function mf.register_mushroom(name, descript, tile, heal)
     })
 end
 
-mf.flowerdatas = {
+hb.flowerdatas = {
 	{
 		"campanula_blue",
 		S("Blue Campanula"),
@@ -161,7 +161,7 @@ mf.flowerdatas = {
 	}
 }
 
-mf.mushroomdatas = {
+hb.mushroomdatas = {
                         {   "mushroom_bulbous_green",
                             S("Green Bulbous"),
                             "mushroom_bulbous_green.png",
@@ -205,19 +205,19 @@ mf.mushroomdatas = {
                         }
                     }
 
-for _, mushroom in pairs(mf.mushroomdatas) do
-    mf.register_mushroom(mushroom[1],
+for _, mushroom in pairs(hb.mushroomdatas) do
+    hb.register_mushroom(mushroom[1],
                             mushroom[2],
                             mushroom[3],
                             mushroom[4]
                             )
 end
 
-for _,item in pairs(mf.flowerdatas) do
-	mf.add_simple_flower(unpack(item))
+for _,item in pairs(hb.flowerdatas) do
+	hb.add_simple_flower(unpack(item))
 end
 
 dofile(minetest.get_modpath(modname) .. "/register_mods.lua")
 
-minetest.log("action","[Mod] " .. mf.modname .. " V " .. mf.version .. "." .. mf.revision .. " loaded.")
-print("[Mod] " .. mf.modname .. " V " .. mf.version .. "." .. mf.revision .. " loaded.")
+minetest.log("action","[Mod] " .. hb.modname .. " V " .. hb.version .. "." .. hb.revision .. " loaded.")
+print("[Mod] " .. hb.modname .. " V " .. hb.version .. "." .. hb.revision .. " loaded.")

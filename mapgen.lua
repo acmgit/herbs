@@ -1,7 +1,7 @@
 --
 -- All other biome API mapgens
 --
-local modname = moreflowers.modname
+local modname = herbs.modname
 
 local function register_flower(seed, flower_name, place, biome, ymin)
 	minetest.register_decoration({
@@ -45,7 +45,7 @@ local function register_mushroom(mushroom_name)
 	})
 end
 
-function moreflowers.register_decorations()
+function herbs.register_decorations()
 
     -- Flowers
 	register_flower(7810530, "campanula_blue",
@@ -122,4 +122,4 @@ end
 --
 -- Detect mapgen to select functions
 --
-moreflowers.register_decorations()
+herbs.register_decorations()
