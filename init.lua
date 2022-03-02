@@ -3,7 +3,7 @@ local hb = herbs
 
 hb.modname = minetest.get_current_modname()
 hb.version = 1
-hb.revision = 0
+hb.revision = 1
 
 local modname = hb.modname
 
