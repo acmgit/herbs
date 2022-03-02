@@ -3,24 +3,24 @@
 
 ### init.lua ###
 
-Blue Campanula=Campanula Blu
-Blue Thimble=Gilia Capitata Blu
-Chanterelle=Gallinaccio
-Cornflower=Fiordaliso
-Green Bulbous=Tignosa Verdognola
+Campanula Blue=Campanula Blu
+Digitalis Blue=Gilia Capitata Blu
+Cantharellus=Gallinaccio
+Centaurea=Fiordaliso
+Amanita Green=Tignosa Verdognola
 Iris=Iris
-Lorikeet=Falsa Spugnola
-Margerit=Margherite
-Noble White=Stella Alpina
-Parasol=Mazza di Tamburo
-Poisonous Sublime=Galerina Marginata
-Red Clover=Trifoglio Rosso
-Red Poppy=Papavero
-Ribwort=Piantaggine
-Round Sundew=Rosolida
-Snapdragon=Bocca di Leone
-Stone Mushroom=Fungo di Pietra
-White Clover=Trifoglio Bianco
-White Yarrow=Achillea Bianca
-Yellow Houndstooth=Dente di Segugio Giallo
-Yellow Thimble=Gilia Capitata Gialla
+Gyromitra=Falsa Spugnola
+Leucanthemum White=Margherite
+Leontopodium White=Stella Alpina
+Macrolepiota=Mazza di Tamburo
+Galerina=Galerina Marginata
+Trifolium Red=Trifoglio Rosso
+Papaver Red=Papavero
+Plantago=Piantaggine
+Dosera round=Rosolida
+Antirrhinum=Bocca di Leone
+Boletus=Fungo di Pietra
+Trifolium White=Trifoglio Bianco
+Achillea White=Achillea Bianca
+Anagallis Yellow=Dente di Segugio Giallo
+Digitalis Yellow=Gilia Capitata Gialla
