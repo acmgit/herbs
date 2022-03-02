@@ -1,25 +1,26 @@
 # textdomain: herbs
 
+
 ### init.lua ###
 
-Blue Campanula=
-Blue Thimble=
-Chanterelle=
-Cornflower=
-Green Bulbous=
+Achillea White=
+Amanita Green=
+Anagallis Yellow=
+Antirrhinum=
+Boletus=
+Campanula Blue=
+Cantharellus=
+Centaurea=
+Digitalis Blue=
+Digitalis Yellow=
+Dosera round=
+Galerina=
+Gyromitra=
 Iris=
-Lorikeet=
-Margerit=
-Noble White=
-Parasol=
-Poisonous Sublime=
-Red Clover=
-Red Poppy=
-Ribwort=
-Round Sundew=
-Snapdragon=
-Stone Mushroom=
-White Clover=
-White Yarrow=
-Yellow Houndstooth=
-Yellow Thimble=
+Leontopodium White=
+Leucanthemum White=
+Macrolepiota=
+Papaver Red=
+Plantago=
+Trifolium Red=
+Trifolium White=

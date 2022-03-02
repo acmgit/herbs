@@ -72,31 +72,31 @@ end
 hb.flowerdatas = {
 	{
 		"campanula_blue",
-		S("Blue Campanula"),
+		S("Campanula Blue"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_blue = 1, flammable = 1}
 	},
 	{
 		"trifolium_red",
-		S("Red Clover"),
+		S("Trifolium Red"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_violet = 1, flammable = 1}
 	},
 	{
 		"trifolium_white",
-		S("White Clover"),
+		S("Trifolium White"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 3 / 16, 4 / 16},
 		{color_green = 1, flammable = 1}
 	},
 	{
 		"centaurea",
-		S("Cornflower"),
+		S("Centaurea"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_blue = 1, flammable = 1}
 	},
     {
 		"anagallis_yellow",
-		S("Yellow Houndstooth"),
+		S("Anagallis Yellow"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_yellow = 1, flammable = 1}
 	},
@@ -108,54 +108,54 @@ hb.flowerdatas = {
 	},
 	{
 		"leucanthemum_white",
-		S("Margerit"),
+		S("Leucanthemum White"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_white = 1, flammable = 1}
 	},
 	{
 		"leontopodium_white",
-		S("Noble White"),
+		S("Leontopodium White"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 2 / 16, 4 / 16},
 		{color_grey = 1, flammable = 1}
 	},
 	{
 		"papaver_red",
-		S("Red Poppy"),
+		S("Papaver Red"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_red = 1, flammable = 1}
 	},
 	{
 		"plantago",
-		S("Ribwort"),
+		S("Plantago"),
 		{-2 / 16, -0.5, -2 / 16, 2 / 16, 5 / 16, 2 / 16},
 		{color_brown = 1, flammable = 1}
 	},
 	{
 		"antirrhinum",
-		S("Snapdragon"),
+		S("Antirrhinum"),
 		{-2 / 16, -0.5, -2 / 16, 2 / 16, 5 / 16, 2 / 16},
 		{color_pink = 1, flammable = 1}
 	},
 	{
 		"dosera",
-		S("Round Sundew"),
+		S("Dosera round"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_red = 1, flammable = 1}
 	},
 	{	"digitalis_blue",
-		S("Blue Thimble"),
+		S("Digitalis Blue"),
 		{-2 / 16, -0.5, -2 / 16, 2 / 16, 5 / 16, 2 / 16},
 		{color_blue = 1, flammable = 1}
 	},
 	{
 		"digitalis_yellow",
-		S("Yellow Thimble"),
+		S("Digitalis Yellow"),
 		{-2 / 16, -0.5, -2 / 16, 2 / 16, 5 / 16, 2 / 16},
 		{color_yellow = 1, flammable = 1}
 	},
 	{
 		"achillea_white",
-		S("White Yarrow"),
+		S("Achillea White"),
 		{-2 / 16, -0.5, -2 / 16, 2 / 16, 5 / 16, 2 / 16},
 		{color_white = 1, flammable = 1}
 	}
@@ -163,43 +163,43 @@ hb.flowerdatas = {
 
 hb.mushroomdatas = {
                         {   "mushroom_amanita_green",
-                            S("Green Bulbous"),
-                            "mushroom_bulbous_green.png",
+                            S("Amanita Green"),
+                            "mushroom_amanita_green.png",
                             1,
                             -10
                         },
                         {
                             "mushroom_cantharellus",
-                            S("Chanterelle"),
-                            "mushroom_chanterelle.png",
+                            S("Cantharellus"),
+                            "mushroom_cantharellus.png",
                             3,
                             0
                         },
                         {
                             "mushroom_gyromitra",
-                            S("Lorikeet"),
-                            "mushroom_lorikeet.png",
+                            S("Gyromitra"),
+                            "mushroom_gyromitra.png",
                             1,
                             -5
                         },
                         {
                             "mushroom_macrolepiota",
-                            S("Parasol"),
-                            "mushroom_parasol.png",
+                            S("Macrolepiota"),
+                            "mushroom_macrolepiota.png",
                             5,
                             0
                         },
                         {
                             "mushroom_galerina",
-                            S("Poisonous Sublime"),
-                            "mushroom_poisonous_sublime.png",
+                            S("Galerina"),
+                            "mushroom_galerina.png",
                             1,
                             -3
                         },
                         {
                             "mushroom_boletus",
-                            S("Stone Mushroom"),
-                            "mushroom_stone.png",
+                            S("Boletus"),
+                            "mushroom_boletus.png",
                             4,
                             0
                         }
