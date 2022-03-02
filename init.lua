@@ -77,25 +77,25 @@ hb.flowerdatas = {
 		{color_blue = 1, flammable = 1}
 	},
 	{
-		"clover_red",
+		"trifolium_red",
 		S("Red Clover"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_violet = 1, flammable = 1}
 	},
 	{
-		"clover_white",
+		"trifolium_white",
 		S("White Clover"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 3 / 16, 4 / 16},
 		{color_green = 1, flammable = 1}
 	},
 	{
-		"cornflower",
+		"centaurea",
 		S("Cornflower"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_blue = 1, flammable = 1}
 	},
     {
-		"houndstooth",
+		"anagallis_yellow",
 		S("Yellow Houndstooth"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_yellow = 1, flammable = 1}
@@ -107,54 +107,54 @@ hb.flowerdatas = {
 		{color_blue = 1, flammable = 1}
 	},
 	{
-		"margerit",
+		"leucanthemum_white",
 		S("Margerit"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_white = 1, flammable = 1}
 	},
 	{
-		"noble_white",
+		"leontopodium_white",
 		S("Noble White"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 2 / 16, 4 / 16},
 		{color_grey = 1, flammable = 1}
 	},
 	{
-		"poppy_red",
+		"papaver_red",
 		S("Red Poppy"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_red = 1, flammable = 1}
 	},
 	{
-		"ribwort",
+		"plantago",
 		S("Ribwort"),
 		{-2 / 16, -0.5, -2 / 16, 2 / 16, 5 / 16, 2 / 16},
 		{color_brown = 1, flammable = 1}
 	},
 	{
-		"snapdragon",
+		"antirrhinum",
 		S("Snapdragon"),
 		{-2 / 16, -0.5, -2 / 16, 2 / 16, 5 / 16, 2 / 16},
 		{color_pink = 1, flammable = 1}
 	},
 	{
-		"sundew",
+		"dosera",
 		S("Round Sundew"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_red = 1, flammable = 1}
 	},
-	{	"thimble_blue",
+	{	"digitalis_blue",
 		S("Blue Thimble"),
 		{-2 / 16, -0.5, -2 / 16, 2 / 16, 5 / 16, 2 / 16},
 		{color_blue = 1, flammable = 1}
 	},
 	{
-		"thimble_yellow",
+		"digitalis_yellow",
 		S("Yellow Thimble"),
 		{-2 / 16, -0.5, -2 / 16, 2 / 16, 5 / 16, 2 / 16},
 		{color_yellow = 1, flammable = 1}
 	},
 	{
-		"yarrow_white",
+		"achillea_white",
 		S("White Yarrow"),
 		{-2 / 16, -0.5, -2 / 16, 2 / 16, 5 / 16, 2 / 16},
 		{color_white = 1, flammable = 1}
@@ -162,42 +162,42 @@ hb.flowerdatas = {
 }
 
 hb.mushroomdatas = {
-                        {   "mushroom_bulbous_green",
+                        {   "mushroom_amanita_green",
                             S("Green Bulbous"),
                             "mushroom_bulbous_green.png",
                             1,
                             -10
                         },
                         {
-                            "mushroom_chanterelle",
+                            "mushroom_cantharellus",
                             S("Chanterelle"),
                             "mushroom_chanterelle.png",
                             3,
                             0
                         },
                         {
-                            "mushroom_lorikeet",
+                            "mushroom_gyromitra",
                             S("Lorikeet"),
                             "mushroom_lorikeet.png",
                             1,
                             -5
                         },
                         {
-                            "mushroom_parasol",
+                            "mushroom_macrolepiota",
                             S("Parasol"),
                             "mushroom_parasol.png",
                             5,
                             0
                         },
                         {
-                            "mushroom_poisonous_sublime",
+                            "mushroom_galerina",
                             S("Poisonous Sublime"),
                             "mushroom_poisonous_sublime.png",
                             1,
                             -3
                         },
                         {
-                            "mushroom_stone",
+                            "mushroom_boletus",
                             S("Stone Mushroom"),
                             "mushroom_stone.png",
                             4,
@@ -216,6 +216,29 @@ end
 for _,item in pairs(hb.flowerdatas) do
 	hb.add_simple_flower(unpack(item))
 end
+
+-- Compatibility for older versions
+minetest.register_alias("clover_red","trifolium_red")
+minetest.register_alias("clover_white","trifolium_white")
+minetest.register_alias("cornflower","centaurea")
+minetest.register_alias("houndstooth","anagallis_yellow")
+minetest.register_alias("margerit","leucanthemum_white")
+minetest.register_alias("poppy_red","papaver_red")
+minetest.register_alias("ribwort","plantago")
+minetest.register_alias("snappdragon","antirrhinum")
+minetest.register_alias("sundew","drosera")
+minetest.register_alias("thimble_blue","digitalis_blue")
+minetest.register_alias("thimble_yellow","digitalis_yellow")
+minetest.register_alias("snappdragon","antirrhinum")
+minetest.register_alias("yarrow_white","achillea_white")
+
+minetest.register_alias("mushroom_bulbou0s_green","mushroom_bulbous_green")
+minetest.register_alias("mushroom_chanterelle","mushroom_cantharellus")
+minetest.register_alias("mushroom_lorikeet","mushroom_gyromitra")
+minetest.register_alias("mushroom_parasol","mushroom_macrolepiota")
+minetest.register_alias("mushroom_poisonous_sublime","mushroom_galerina")
+minetest.register_alias("mushroom_stone","mushroom_boletus")
+
 
 dofile(minetest.get_modpath(modname) .. "/register_mods.lua")
 
