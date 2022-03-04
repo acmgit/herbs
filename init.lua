@@ -137,7 +137,7 @@ hb.flowerdatas = {
 		{color_pink = 1, flammable = 1}
 	},
 	{
-		"dosera",
+		"drosera",
 		S("Dosera round"),
 		{-4 / 16, -0.5, -4 / 16, 4 / 16, 5 / 16, 4 / 16},
 		{color_red = 1, flammable = 1}
