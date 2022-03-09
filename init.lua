@@ -232,7 +232,7 @@ minetest.register_alias("herbs:thimble_yellow","herbs:digitalis_yellow")
 minetest.register_alias("herbs:yarrow_white","herbs:achillea_white")
 minetest.register_alias("herbs:nobel_white","herbs:leontopodium_white")
 
-minetest.register_alias("herbs:mushroom_bulbous_green","mushroom_amanita_green")
+minetest.register_alias("herbs:mushroom_bulbous_green","herbs:mushroom_amanita_green")
 minetest.register_alias("herbs:mushroom_chanterelle","herbs:mushroom_cantharellus")
 minetest.register_alias("herbs:mushroom_lorikeet","herbs:mushroom_gyromitra")
 minetest.register_alias("herbs:mushroom_parasol","herbs:mushroom_macrolepiota")
