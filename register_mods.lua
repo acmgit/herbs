@@ -41,3 +41,5 @@ if(minetest.get_modpath("signs_bot")) then
         reg(modname .. ":" .. value[1])
         minetest.log("action",hb.modname .. " registers " .. modname..":" .. value[1] .. " @signs_bot.")
     end
+
+end
