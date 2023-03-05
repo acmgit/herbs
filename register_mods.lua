@@ -43,3 +43,20 @@ if(minetest.get_modpath("signs_bot")) then
     end
 
 end
+
+if(minetest.get_modpath("flowerpot")) then
+    local reg = flowerpot.register_node
+
+    for key, value in pairs(hb.mushroomdatas) do
+        reg(modname .. : .. value[1])
+        minetest.log("action",hb.modname .. " registers " .. modname..":" .. value[1] .. " @signs_bot.")
+
+    end
+
+    for key, value in pairs(hb.flowerdatas) do
+        reg(modname .. ":" .. value[1])
+        minetest.log("action",hb.modname .. " registers " .. modname..":" .. value[1] .. " @signs_bot.")
+
+    end
+
+end
