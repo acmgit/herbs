@@ -60,3 +60,27 @@ if(minetest.get_modpath("flowerpot")) then
     end
 
 end
+
+if(minetest.get_modpath("technic")) then
+    local extractor_recipes = {
+        {"campanula_blue", "dye:blue"},
+        {"trifolium_red", "dye:violet"},
+        {"trifolium_white", "dye:green"},
+        {"centaurea", "dye:blue"},
+        {"anagallis_yellow", "dye:yellow"},
+        {"leucanthemum_white", "dye:white"},
+        {"leontopodium_white", "dye:grey"},
+        {"papaver_red", "dye:red"},
+        {"antirrhinum", "dye:pink"},
+        {"drosera", "dye:red"},
+        {"digitalis_blue", "dye:blue"},
+        {"digitalis_yellow", "dye:yellow"},
+        {"achillea_white", "dye:white"},
+    }
+
+    for _,value in pairs(extractor_recipes) do
+        technic.register_extractor_recipe({input = {"herbs:" .. value[1]}, output = value[2]})
+
+    end -- for _,value
+
+end -- if(technic)
