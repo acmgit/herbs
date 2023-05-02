@@ -79,7 +79,7 @@ if(minetest.get_modpath("technic")) then
     }
 
     for _,value in pairs(extractor_recipes) do
-        technic.register_extractor_recipe({input = {"herbs:" .. value[1]}, output = value[2]})
+        technic.register_extractor_recipe({input = {"herbs:" .. value[1]}, output = value[2] .. " 4"})
 
     end -- for _,value
 
